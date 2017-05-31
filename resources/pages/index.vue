@@ -4,6 +4,7 @@
 		<v-data-table
 			:headers="headers"
 			:items="page.posts"
+			:pagination.sync="pagination"
 			>
 			<template slot="items" scope="props">
 				<td>{{ props.item.id }}	</td>
@@ -21,7 +22,6 @@
 		<v-data-table
 			:headers="headers"
 			:items="page.posts"
-			:pagination.sync="pagination"
 			>
 			<template slot="items" scope="props">
 				<td>{{ props.item.id }}	</td>
